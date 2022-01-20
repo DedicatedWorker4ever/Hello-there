@@ -1,5 +1,6 @@
 package com.example.Hellothere;
 
+import org.springframework.ui.Model;
 import org.springframework.web.bind.annotation.GetMapping;
 import org.springframework.web.bind.annotation.RestController;
 
@@ -10,7 +11,7 @@ public class HelloController {
     public String index() {
         System.out.println("hello there!!");
 
-        return "Greetings from Spring Boot! And Sam";
+        return "index";
 
     }
 
