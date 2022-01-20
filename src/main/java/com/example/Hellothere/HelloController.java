@@ -1,6 +1,6 @@
 package com.example.Hellothere;
 
-import org.springframework.ui.Model;
+
 import org.springframework.web.bind.annotation.GetMapping;
 import org.springframework.web.bind.annotation.RestController;
 import org.springframework.web.servlet.ModelAndView;
@@ -9,8 +9,8 @@ import org.springframework.web.servlet.ModelAndView;
 public class HelloController {
 
     @GetMapping("/")
-    public ModelAndView index() {
-        return new ModelAndView("frontpage.html");
+    public String index() {
+        return "Hello There!";
     }
 
 }
